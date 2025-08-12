@@ -32,12 +32,12 @@ public class CursoTest {
             // Preencher email no modal correto
             WebElement emailInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='email' and contains(@class, 'sign-input')]")));
             emailInput.clear();
-            emailInput.sendKeys("fsizoto@gmail.com");  // coloque seu email aqui
+            emailInput.sendKeys("email");  // coloque seu email aqui
 
             // Preencher senha no modal correto
             WebElement passwordInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='password' and contains(@class, 'sign-input')]")));
             passwordInput.clear();
-            passwordInput.sendKeys("Ripley88#");  // coloque sua senha aqui
+            passwordInput.sendKeys("senha");  // coloque sua senha aqui
 
             // Clicar no botão de login
             WebElement loginBtn = wait.until(ExpectedConditions.elementToBeClickable(By.id("submitLogin")));
